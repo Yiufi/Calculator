@@ -7,10 +7,17 @@ namespace Calculator
     static void Main(string[] args)
     {
       Console.Clear();
-      Console.WriteLine("Primeiro valor: ");
+
+      Console.Write("Primeiro valor: ");
       float v1 = float.Parse(Console.ReadLine());
-      
-      Console.WriteLine(v1);
+
+      Console.Write("Segundo valor: ");
+      float v2 = float.Parse(Console.ReadLine());
+
+      Console.WriteLine("");
+
+      float resultado = v1 + v2;
+      Console.Write($"O resultado da Soma é {resultado}");
      
     }
   }
